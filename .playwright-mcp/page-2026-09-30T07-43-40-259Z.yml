@@ -1,0 +1,39 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - banner [ref=f1e4]:
+      - heading "TaskBoard" [level=1] [ref=f1e6]
+      - button "新規タスク" [disabled] [ref=f1e7]
+    - search "タスクの検索と絞り込み" [ref=f1e10]:
+      - generic [ref=f1e11]:
+        - generic [ref=f1e12]: 検索
+        - searchbox "検索" [disabled] [ref=f1e13]
+      - generic [ref=f1e14]:
+        - generic [ref=f1e15]: 担当者
+        - combobox "担当者" [disabled] [ref=f1e16]:
+          - option "すべて" [selected]
+          - option "未割り当て"
+      - generic [ref=f1e17]:
+        - generic [ref=f1e18]: 優先度
+        - combobox "優先度" [disabled] [ref=f1e19]:
+          - option "すべて" [selected]
+          - option "低"
+          - option "中"
+          - option "高"
+  - main [ref=f1e20]:
+    - region [ref=f1e21]:
+      - heading "未着手" [level=2] [ref=f1e23]
+      - button "タスクを追加" [disabled] [ref=f1e28]
+      - paragraph [ref=f1e31]: 読み込み中…
+    - region [ref=f1e32]:
+      - heading "進行中" [level=2] [ref=f1e34]
+      - button "タスクを追加" [disabled] [ref=f1e39]
+      - paragraph [ref=f1e42]: 読み込み中…
+    - region [ref=f1e43]:
+      - heading "保留" [level=2] [ref=f1e45]
+      - button "タスクを追加" [disabled] [ref=f1e50]
+      - paragraph [ref=f1e53]: 読み込み中…
+    - region [ref=f1e54]:
+      - heading "完了" [level=2] [ref=f1e56]
+      - button "タスクを追加" [disabled] [ref=f1e61]
+      - paragraph [ref=f1e64]: 読み込み中…
+    - generic [aria-hidden] [ref=f1e65]: カラムを追加

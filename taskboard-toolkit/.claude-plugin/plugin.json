@@ -1,0 +1,8 @@
+{
+  "name": "taskboard-toolkit",
+  "version": "1.0.0",
+  "description": "タスクボード開発チームのスキル・エージェント・フック・MCPをまとめたプラグイン",
+  "author": {
+    "name": "Your Team"
+  }
+}

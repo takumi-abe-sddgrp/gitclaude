@@ -1,0 +1,421 @@
+- generic [active] [ref=e1]:
+  - blockquote [aria-hidden] [ref=e2]:
+    - heading [level=2] [ref=e3]: Documentation Index
+    - paragraph [ref=e4]:
+      - text: "Fetch the complete documentation index at:"
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /docs/llms.txt
+        - text: /docs/llms.txt
+    - paragraph [ref=e6]: Use this file to discover all available pages before exploring further.
+  - generic [ref=e7]:
+    - link "Skip to main content" [ref=e8] [cursor=pointer]:
+      - /url: "#content-area"
+    - generic [ref=e10]:
+      - banner [ref=e11]:
+        - generic [ref=e15]:
+          - generic [ref=e17]:
+            - link "Claude Code Docs home page light logo" [ref=e19] [cursor=pointer]:
+              - /url: /docs/en/overview
+              - generic [ref=e20]: Claude Code Docs home page
+              - img "light logo" [ref=e21]
+            - generic [ref=e22]:
+              - button "Open search" [ref=e23] [cursor=pointer]:
+                - generic [ref=e24]: Search...
+              - button "Toggle assistant panel" [ref=e26] [cursor=pointer]
+              - button "More actions" [ref=e30] [cursor=pointer]
+          - button "Navigation Getting started Overview" [ref=e32] [cursor=pointer]:
+            - generic [ref=e33]: Navigation
+            - generic [ref=e36]:
+              - generic [ref=e37]: Getting started
+              - generic [ref=e41]: Overview
+      - main [ref=e43]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - generic [ref=e48]: Getting started
+              - generic [ref=e49]:
+                - heading "Overview" [level=1] [ref=e50]
+                - generic [ref=e51]:
+                  - button "Copy page" [ref=e52] [cursor=pointer]
+                  - button "More actions" [ref=e59] [cursor=pointer]
+            - paragraph [ref=e63]: Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser.
+          - generic [ref=e64]:
+            - generic [ref=e65]: Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools to get things done.
+            - heading "Navigate to header Get started" [level=2] [ref=e66]:
+              - link "Navigate to header" [ref=e67] [cursor=pointer]:
+                - /url: "#get-started"
+              - generic [ref=e72] [cursor=pointer]: Get started
+            - generic [ref=e73]:
+              - text: "Claude Code runs on several surfaces: the terminal, IDE extensions, a desktop app, and the web. Choose one from the tabs below to get started. Most surfaces require a"
+              - link "Claude subscription" [ref=e74] [cursor=pointer]:
+                - /url: https://claude.com/pricing?utm_source=claude_code&utm_medium=docs&utm_content=overview_pricing
+              - text: or
+              - link "Anthropic Console" [ref=e75] [cursor=pointer]:
+                - /url: https://platform.claude.com/
+              - text: account. The Terminal CLI, VS Code, and JetBrains also support
+              - link "third-party providers" [ref=e76] [cursor=pointer]:
+                - /url: /docs/en/third-party-integrations
+              - text: .
+            - generic [ref=e77]:
+              - tablist [ref=e78]:
+                - tab "Terminal" [selected] [ref=e79] [cursor=pointer]
+                - tab "VS Code" [ref=e81] [cursor=pointer]
+                - tab "Desktop app" [ref=e83] [cursor=pointer]
+                - tab "Web" [ref=e85] [cursor=pointer]
+                - tab "JetBrains" [ref=e87] [cursor=pointer]
+              - tabpanel "Terminal" [ref=e90]:
+                - generic [ref=e91]: The full-featured CLI for working with Claude Code directly in your terminal. Edit files, run commands, and manage your entire project from the command line.
+                - generic [ref=e92]:
+                  - text: To install Claude Code, open a terminal and run the command for your system. If you haven’t used a terminal before, the
+                  - link "terminal guide" [ref=e93] [cursor=pointer]:
+                    - /url: /docs/en/terminal-guide
+                  - text: shows how to open one and paste the command.
+                - generic [ref=e94]:
+                  - tablist [ref=e95]:
+                    - tab "Native Install (Recommended)" [selected] [ref=e96] [cursor=pointer]
+                    - tab "Homebrew" [ref=e98] [cursor=pointer]
+                    - tab "WinGet" [ref=e100] [cursor=pointer]
+                  - tabpanel "Native Install (Recommended)" [ref=e103]:
+                    - strong [ref=e105]: "macOS, Linux, WSL:"
+                    - generic [ref=e106]:
+                      - generic [ref=e107]:
+                        - button "Report incorrect code" [ref=e109] [cursor=pointer]
+                        - generic [ref=e113]:
+                          - button "Copy the contents from the code block" [ref=e114] [cursor=pointer]
+                          - status [ref=e118]
+                        - button "Ask Assistant" [ref=e120] [cursor=pointer]
+                      - code [ref=e127]:
+                        - generic [ref=e128]: curl -fsSL https://claude.ai/install.sh | bash
+                    - strong [ref=e130]: "Windows PowerShell:"
+                    - generic [ref=e131]:
+                      - generic [ref=e132]:
+                        - button "Report incorrect code" [ref=e134] [cursor=pointer]
+                        - generic [ref=e138]:
+                          - button "Copy the contents from the code block" [ref=e139] [cursor=pointer]
+                          - status [ref=e143]
+                        - button "Ask Assistant" [ref=e145] [cursor=pointer]
+                      - code [ref=e152]:
+                        - generic [ref=e153]: irm https://claude.ai/install.ps1 | iex
+                    - strong [ref=e155]: "Windows CMD:"
+                    - generic [ref=e156]:
+                      - generic [ref=e157]:
+                        - button "Report incorrect code" [ref=e159] [cursor=pointer]
+                        - generic [ref=e163]:
+                          - button "Copy the contents from the code block" [ref=e164] [cursor=pointer]
+                          - status [ref=e168]
+                        - button "Ask Assistant" [ref=e170] [cursor=pointer]
+                      - code [ref=e177]:
+                        - generic [ref=e178]: curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+                    - generic [ref=e179]:
+                      - text: When the installer finishes, open a new terminal window and run
+                      - code [ref=e180]: claude --version
+                      - text: . A working installation prints a version number. If your shell says
+                      - code [ref=e181]: claude
+                      - text: "isn’t found or isn’t recognized, the install directory isn’t on your PATH yet: see"
+                      - link "Fix your PATH" [ref=e182] [cursor=pointer]:
+                        - /url: /docs/en/troubleshoot-install#command-not-found-claude-after-installation
+                      - text: .
+                    - generic [ref=e183]:
+                      - text: If you see
+                      - code [ref=e184]: The token '&&' is not a valid statement separator
+                      - text: ", you’re in PowerShell, not CMD. If you see"
+                      - code [ref=e185]: "'irm' is not recognized as an internal or external command"
+                      - text: ", you’re in CMD, not PowerShell. Your prompt shows"
+                      - code [ref=e186]: PS C:\
+                      - text: when you’re in PowerShell and
+                      - code [ref=e187]: C:\
+                      - text: without the
+                      - code [ref=e188]: PS
+                      - text: when you’re in CMD.
+                    - generic [ref=e189]:
+                      - text: If the install command fails with
+                      - code [ref=e190]: syntax error near unexpected token '<'
+                      - text: ", a"
+                      - code [ref=e191]: "403"
+                      - text: ", or another curl error, see"
+                      - link "Troubleshoot installation" [ref=e192] [cursor=pointer]:
+                        - /url: /docs/en/troubleshoot-install#find-your-error
+                      - text: to match the error to a fix and for alternative install methods.
+                    - generic [ref=e193]:
+                      - link "Git for Windows" [ref=e194] [cursor=pointer]:
+                        - /url: https://git-scm.com/downloads/win
+                      - text: is recommended on native Windows so Claude Code can use the Bash tool. If Git for Windows is not installed, Claude Code uses PowerShell as the shell tool instead. WSL setups do not need Git for Windows.
+                    - note "Info" [ref=e195]:
+                      - generic [ref=e199]: Native installations automatically update in the background to keep you on the latest version.
+                - generic [ref=e201]:
+                  - text: You can also install with
+                  - link "apt, dnf, or apk" [ref=e202] [cursor=pointer]:
+                    - /url: /docs/en/setup#install-with-linux-package-managers
+                  - text: on Debian, Fedora, RHEL, and Alpine.
+                - generic [ref=e203]:
+                  - text: Then start Claude Code in any project. Replace
+                  - code [ref=e204]: your-project
+                  - text: "with the path to a project directory on your machine:"
+                - generic [ref=e205]:
+                  - generic [ref=e206]:
+                    - button "Report incorrect code" [ref=e208] [cursor=pointer]
+                    - generic [ref=e212]:
+                      - button "Copy the contents from the code block" [ref=e213] [cursor=pointer]
+                      - status [ref=e217]
+                    - button "Ask Assistant" [ref=e219] [cursor=pointer]
+                  - code [ref=e226]:
+                    - generic [ref=e227]: cd your-project
+                    - generic [ref=e228]: claude
+                - generic [ref=e229]:
+                  - text: You’ll be prompted to log in on first use. If you’ve set the
+                  - code [ref=e230]: ANTHROPIC_API_KEY
+                  - text: environment variable, Claude Code skips the login prompt and asks you to approve the key instead. That’s it!
+                  - link "Continue with the Quickstart →" [ref=e231] [cursor=pointer]:
+                    - /url: /docs/en/quickstart
+                - note "Tip" [ref=e232]:
+                  - generic [ref=e237]:
+                    - text: See
+                    - link "advanced setup" [ref=e238] [cursor=pointer]:
+                      - /url: /docs/en/setup
+                    - text: for installation options, manual updates, or uninstallation instructions. Visit
+                    - link "installation troubleshooting" [ref=e239] [cursor=pointer]:
+                      - /url: /docs/en/troubleshoot-install
+                    - text: if you hit issues.
+            - heading "Navigate to header What you can do" [level=2] [ref=e240]:
+              - link "Navigate to header" [ref=e241] [cursor=pointer]:
+                - /url: "#what-you-can-do"
+              - generic [ref=e246] [cursor=pointer]: What you can do
+            - generic [ref=e247]: "Here are some of the ways you can use Claude Code:"
+            - generic [ref=e248]:
+              - group [ref=e249]:
+                - paragraph [ref=e257] [cursor=pointer]: Automate the work you keep putting off
+              - group [ref=e258]:
+                - paragraph [ref=e266] [cursor=pointer]: Build features and fix bugs
+              - group [ref=e267]:
+                - paragraph [ref=e275] [cursor=pointer]: Create commits and pull requests
+              - group [ref=e276]:
+                - paragraph [ref=e284] [cursor=pointer]: Connect your tools with MCP
+              - group [ref=e285]:
+                - paragraph [ref=e293] [cursor=pointer]: Customize with instructions, skills, and hooks
+              - group [ref=e294]:
+                - paragraph [ref=e302] [cursor=pointer]: Run agents in parallel and build custom agents
+              - group [ref=e303]:
+                - paragraph [ref=e311] [cursor=pointer]: Pipe, script, and automate with the CLI
+              - group [ref=e312]:
+                - paragraph [ref=e320] [cursor=pointer]: Schedule recurring tasks
+              - group [ref=e321]:
+                - paragraph [ref=e329] [cursor=pointer]: Work from anywhere
+            - heading "Navigate to header Use Claude Code everywhere" [level=2] [ref=e330]:
+              - link "Navigate to header" [ref=e331] [cursor=pointer]:
+                - /url: "#use-claude-code-everywhere"
+              - generic [ref=e336] [cursor=pointer]: Use Claude Code everywhere
+            - generic [ref=e337]:
+              - text: Each
+              - link "surface" [ref=e338] [cursor=pointer]:
+                - /url: /docs/en/glossary#surface
+              - text: connects to the same underlying Claude Code engine, so your repo’s CLAUDE.md files, settings, and MCP servers work across all of them.
+            - generic [ref=e339]:
+              - text: Beyond the
+              - link "Terminal" [ref=e340] [cursor=pointer]:
+                - /url: /docs/en/quickstart
+              - text: ","
+              - link "VS Code" [ref=e341] [cursor=pointer]:
+                - /url: /docs/en/vs-code
+              - text: ","
+              - link "JetBrains" [ref=e342] [cursor=pointer]:
+                - /url: /docs/en/jetbrains
+              - text: ","
+              - link "Desktop" [ref=e343] [cursor=pointer]:
+                - /url: /docs/en/desktop
+              - text: ", and"
+              - link "Web" [ref=e344] [cursor=pointer]:
+                - /url: /docs/en/claude-code-on-the-web
+              - text: "surfaces above, Claude Code integrates with CI/CD, chat, and browser workflows:"
+            - region "Scrollable table" [ref=e345]:
+              - table [ref=e347]:
+                - rowgroup [ref=e348]:
+                  - row [ref=e349]:
+                    - columnheader "What I want to do" [ref=e350]
+                    - columnheader "Best option" [ref=e351]
+                - rowgroup [ref=e352]:
+                  - row [ref=e353]:
+                    - cell "Continue a local session from my phone or another device" [ref=e354]
+                    - cell [ref=e355]:
+                      - link "Remote Control" [ref=e356] [cursor=pointer]:
+                        - /url: /docs/en/remote-control
+                  - row [ref=e357]:
+                    - cell "Push events from Telegram, Discord, iMessage, or my own webhooks into a session" [ref=e358]
+                    - cell [ref=e359]:
+                      - link "Channels" [ref=e360] [cursor=pointer]:
+                        - /url: /docs/en/channels
+                  - row [ref=e361]:
+                    - cell "Start a task locally, continue on mobile" [ref=e362]
+                    - cell [ref=e363]:
+                      - link [ref=e364] [cursor=pointer]:
+                        - /url: /docs/en/claude-code-on-the-web#from-terminal-to-cloud
+                        - code [ref=e365]: claude --cloud
+                      - text: ", then the"
+                      - link "Claude mobile app" [ref=e366] [cursor=pointer]:
+                        - /url: /docs/en/mobile
+                  - row [ref=e367]:
+                    - cell "Run Claude on a recurring schedule" [ref=e368]
+                    - cell [ref=e369]:
+                      - link "Routines" [ref=e370] [cursor=pointer]:
+                        - /url: /docs/en/routines
+                      - text: or
+                      - link "Desktop scheduled tasks" [ref=e371] [cursor=pointer]:
+                        - /url: /docs/en/desktop-scheduled-tasks
+                  - row [ref=e372]:
+                    - cell "Automate PR reviews and issue triage" [ref=e373]
+                    - cell [ref=e374]:
+                      - link "GitHub Actions" [ref=e375] [cursor=pointer]:
+                        - /url: /docs/en/github-actions
+                      - text: or
+                      - link "GitLab CI/CD" [ref=e376] [cursor=pointer]:
+                        - /url: /docs/en/gitlab-ci-cd
+                  - row [ref=e377]:
+                    - cell "Get automatic code review on every PR" [ref=e378]
+                    - cell [ref=e379]:
+                      - link "GitHub Code Review" [ref=e380] [cursor=pointer]:
+                        - /url: /docs/en/code-review
+                  - row [ref=e381]:
+                    - cell "Route bug reports from Slack to pull requests" [ref=e382]
+                    - cell [ref=e383]:
+                      - link "Slack" [ref=e384] [cursor=pointer]:
+                        - /url: /docs/en/slack
+                  - row [ref=e385]:
+                    - cell "Debug live web applications" [ref=e386]
+                    - cell [ref=e387]:
+                      - link "Chrome" [ref=e388] [cursor=pointer]:
+                        - /url: /docs/en/chrome
+                  - row [ref=e389]:
+                    - cell "Build custom agents for your own workflows" [ref=e390]
+                    - cell [ref=e391]:
+                      - link "Agent SDK" [ref=e392] [cursor=pointer]:
+                        - /url: /docs/en/agent-sdk/overview
+            - heading "Navigate to header Next steps" [level=2] [ref=e393]:
+              - link "Navigate to header" [ref=e394] [cursor=pointer]:
+                - /url: "#next-steps"
+              - generic [ref=e399] [cursor=pointer]: Next steps
+            - generic [ref=e400]: Once you’ve installed Claude Code, these guides help you go deeper.
+            - list [ref=e401]:
+              - listitem [ref=e402]:
+                - link "Quickstart" [ref=e403] [cursor=pointer]:
+                  - /url: /docs/en/quickstart
+                - text: ": walk through your first real task, from exploring a codebase to committing a fix"
+              - listitem [ref=e404]:
+                - link "Store instructions and memories" [ref=e405] [cursor=pointer]:
+                  - /url: /docs/en/memory
+                - text: ": give Claude persistent instructions with CLAUDE.md files and auto memory"
+              - listitem [ref=e406]:
+                - link "Common workflows" [ref=e407] [cursor=pointer]:
+                  - /url: /docs/en/common-workflows
+                - text: and
+                - link "best practices" [ref=e408] [cursor=pointer]:
+                  - /url: /docs/en/best-practices
+                - text: ": patterns for getting the most out of Claude Code"
+              - listitem [ref=e409]:
+                - link "Claude Academy" [ref=e410] [cursor=pointer]:
+                  - /url: https://academy.claude.com/
+                - text: ": free self-paced courses, including"
+                - link "Claude Code 101" [ref=e411] [cursor=pointer]:
+                  - /url: https://academy.claude.com/courses/claude-code-101
+                - text: and
+                - link "Claude Code in Action" [ref=e412] [cursor=pointer]:
+                  - /url: https://academy.claude.com/courses/claude-code-in-action
+              - listitem [ref=e413]:
+                - link "A harness for every task" [ref=e414] [cursor=pointer]:
+                  - /url: https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code
+                - text: ": how the Claude Code team uses"
+                - link "dynamic workflows" [ref=e415] [cursor=pointer]:
+                  - /url: /docs/en/workflows
+                - text: to orchestrate many subagents at once
+              - listitem [ref=e416]:
+                - link "Settings" [ref=e417] [cursor=pointer]:
+                  - /url: /docs/en/settings
+                - text: ": customize Claude Code for your workflow"
+              - listitem [ref=e418]:
+                - link "Troubleshooting" [ref=e419] [cursor=pointer]:
+                  - /url: /docs/en/troubleshooting
+                - text: ": solutions for common issues"
+              - listitem [ref=e420]:
+                - link "code.claude.com" [ref=e421] [cursor=pointer]:
+                  - /url: https://code.claude.com/
+                - text: ": demos, pricing, and product details"
+          - generic [ref=e423]:
+            - paragraph [ref=e424]: Was this page helpful?
+            - generic [ref=e426]:
+              - button "Yes" [ref=e427] [cursor=pointer]
+              - button "No" [ref=e432] [cursor=pointer]
+          - navigation "Pagination" [ref=e437]:
+            - 'link "Next: Quickstart" [ref=e438] [cursor=pointer]':
+              - /url: /docs/en/quickstart
+              - generic [ref=e439]: Quickstart
+          - generic [ref=e443]:
+            - textbox "Ask a question..." [ref=e444]
+            - button "Send message" [disabled] [ref=e445]
+      - contentinfo [ref=e449]:
+        - generic [ref=e451]:
+          - generic [ref=e452]:
+            - link "Claude Code Docs home page light logo" [ref=e453] [cursor=pointer]:
+              - /url: /docs/en/overview
+              - generic [ref=e454]: Claude Code Docs home page
+              - img "light logo" [ref=e455]
+            - generic [ref=e456]:
+              - link "x" [ref=e457] [cursor=pointer]:
+                - /url: https://x.com/AnthropicAI
+              - link "linkedin" [ref=e460] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/anthropicresearch
+          - generic [ref=e463]:
+            - generic [ref=e465]:
+              - paragraph [ref=e466]: Company
+              - link "Anthropic" [ref=e467] [cursor=pointer]:
+                - /url: https://www.anthropic.com/company
+              - link "Careers" [ref=e468] [cursor=pointer]:
+                - /url: https://www.anthropic.com/careers
+              - link "Economic Futures" [ref=e469] [cursor=pointer]:
+                - /url: https://www.anthropic.com/economic-futures
+              - link "Research" [ref=e470] [cursor=pointer]:
+                - /url: https://www.anthropic.com/research
+              - link "News" [ref=e471] [cursor=pointer]:
+                - /url: https://www.anthropic.com/news
+              - link "Trust center" [ref=e472] [cursor=pointer]:
+                - /url: https://trust.anthropic.com/
+              - link "Transparency" [ref=e473] [cursor=pointer]:
+                - /url: https://www.anthropic.com/transparency
+            - generic [ref=e475]:
+              - paragraph [ref=e476]: Help and security
+              - link "Availability" [ref=e477] [cursor=pointer]:
+                - /url: https://www.anthropic.com/supported-countries
+              - link "Status" [ref=e478] [cursor=pointer]:
+                - /url: https://status.anthropic.com/
+              - link "Support center" [ref=e479] [cursor=pointer]:
+                - /url: https://support.claude.com/
+            - generic [ref=e481]:
+              - paragraph [ref=e482]: Learn
+              - link "Courses" [ref=e483] [cursor=pointer]:
+                - /url: https://academy.claude.com/
+              - link "MCP connectors" [ref=e484] [cursor=pointer]:
+                - /url: https://claude.com/partners/mcp
+              - link "Customer stories" [ref=e485] [cursor=pointer]:
+                - /url: https://www.claude.com/customers
+              - link "Engineering blog" [ref=e486] [cursor=pointer]:
+                - /url: https://www.anthropic.com/engineering
+              - link "Events" [ref=e487] [cursor=pointer]:
+                - /url: https://www.anthropic.com/events
+              - link "Powered by Claude" [ref=e488] [cursor=pointer]:
+                - /url: https://claude.com/partners/powered-by-claude
+              - link "Service partners" [ref=e489] [cursor=pointer]:
+                - /url: https://claude.com/partners/services
+              - link "Startups program" [ref=e490] [cursor=pointer]:
+                - /url: https://claude.com/programs/startups
+            - generic [ref=e492]:
+              - paragraph [ref=e493]: Terms and policies
+              - link "Privacy choices" [ref=e494] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/privacy
+              - link "Privacy policy" [ref=e495] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/privacy
+              - link "Disclosure policy" [ref=e496] [cursor=pointer]:
+                - /url: https://www.anthropic.com/responsible-disclosure-policy
+              - link "Usage policy" [ref=e497] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/aup
+              - link "Commercial terms" [ref=e498] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/commercial-terms
+              - link "Consumer terms" [ref=e499] [cursor=pointer]:
+                - /url: https://www.anthropic.com/legal/consumer-terms
+  - alert [ref=e500]
